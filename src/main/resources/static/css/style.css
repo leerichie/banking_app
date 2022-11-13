@@ -1,0 +1,83 @@
+body {
+    position: center;
+    top: 50%;
+    left: 50%;
+}
+
+div.container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+a.navbar-brand {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/*.login-box {*/
+/*    position: center;*/
+/*    align-items: center;*/
+/*}*/
+
+.logo {
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+.header-one {
+    font-family: Papyrus, serif;
+    font-weight: bolder;
+    color: chocolate;
+}
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+.vertical-menu {
+    width: 400px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+    font-family: Papyrus, serif, bold;
+
+}
+
+.vertical-menu a:hover {
+    background-color: lightseagreen; /* Dark grey background on mouse-over */
+    color: white;
+}
+
+.vertical-menu a.active {
+    background-color: lightseagreen; /* Add a green color to the "active/current" link */
+    color: white;
+}

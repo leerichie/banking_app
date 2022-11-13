@@ -3,7 +3,9 @@
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
     <meta charset="ISO-8859-1">
-    <title>Registration and Login App</title>
+    <title>Your Account</title>
+
+    <link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}">
 
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -34,10 +36,30 @@
 
 <br>
 <br>
+<!--        LOGO and heading-->
+<div class="container-fluid text-center">
+    <div class="logo">
+        <img src="/img/moneyLogo.jpg" th:href="@{/img/moneyLogo.jpg}" class="logo">
+    </div>
+    <div class="header-one">
+        <h1>Leeski banking</h1>
+    </div>
+    <div>
+        <h4>Welcome back </h4>
+        <span sec:authentication="principal.username"> User</span>
+    </div>
 
-<div class="container">
-    <h1>Leeski banking</h1>
-    Welcome <span sec:authentication="principal.username"> User</span>
+<!--            menu options-->
+<div class="vertical-menu container-fluid text-center">
+    <h4>choose an option:</h4>
+    <a href="#" class="active">Home</a>
+    <a href="#">Make a withdrawal</a>
+    <a href="#">Make a cash deposit</a>
+    <a href="#">Transfer funds / pay a bill</a>
+    <a href="#">BLIK - simplified transfers</a>
+    <a href="#">Change PIN</a>
 </div>
+</div>
+
 </body>
 </html>
