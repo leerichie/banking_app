@@ -16,9 +16,9 @@ public class MainController {
         return "main_menu";
     }
 
-//    @GetMapping("/main_menu")
-//    public String withdraw(){
-//        return "withdraw";
-//    }
+    @GetMapping("/main_menu")
+    public String withdraw(){
+        return "withdraw";
+    }
 
 }

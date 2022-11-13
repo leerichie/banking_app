@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Oops :)</title>
+    <link rel="stylesheet" href="/static/css/style.css" th:href="@{/static/css/style.css}">
+</head>
+<body>
+
+<!-- header-->
+<div class="scrollmenu">
+    <a href="login.html" th:href="@{/logout}">Home</a>
+    <a href="registration.html" th:href="@{/registration}">Register</a>
+    <a href="login.html" th:href="@{/logout}">Login</a>
+    <a href="http://www.google.com" th:src="@{http://www.google.com}">Search</a>
+<!--    <a sec:authorize="isAuthenticated()" th:href="@{/logout}">Logout</a>-->
+    ...
+</div>
+<!-- error notice-->
+<div class="bg-error">
+    <img src="/static/img/404errorcat.png" th:href="@{/static/img/404errorcat.png}">
+    <!--    <h1>404</h1>-->
+    <!--    <h2>PAGE NOT FOUND</h2>-->
+<!--    <div class="vertical-menu container-fluid text-center">-->
+<!--        <h3>BACK HOME?</h3>-->
+<!--        <a href="/logout" th:href="@{/logout}" class="yes">Yes</a>-->
+<!--        <a href="https://www.youtube.com/watch?v=G3AfIvJBcGo">No</a>-->
+<!--    </div>-->
+</div>
+</body>
+</html>

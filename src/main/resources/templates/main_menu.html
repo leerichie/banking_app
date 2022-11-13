@@ -17,7 +17,7 @@
 <!--	 create navi bar ( header) -->
 <div class="scrollmenu">
     <a href="login.html" th:href="@{/logout}">Home</a>
-    <a href="registration" th:href="@{/registration}">Register</a>
+    <a href="registration.html" th:href="@{/registration}">Register</a>
     <a href="login.html" th:href="@{/logout}">Login</a>
     <a href="http://www.google.com" th:src="@{http://www.google.com}">Search</a>
     <a sec:authorize="isAuthenticated()" th:href="@{/logout}">Logout</a>

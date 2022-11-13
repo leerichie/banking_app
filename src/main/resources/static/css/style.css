@@ -97,3 +97,20 @@ div.scrollmenu a:hover {
     color: white;
     text-decoration: none;
 }
+
+/*body.error, html {*/
+/*    height: 100%;*/
+/*}*/
+
+.bg-error {
+    /*!* The image used *!*/
+    /*background-image: url("/static/img/404errorcat.png");*/
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
