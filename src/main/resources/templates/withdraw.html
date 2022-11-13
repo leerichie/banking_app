@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Withdrawals</title>
+
+  <link rel="stylesheet" href="/static/css/style.css" th:href="@{/css/style.css}">
+
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+</head>
+<body>
+<!--	 create navi bar ( header) -->
+
+<div class="scrollmenu">
+  <a href="login.html" th:href="@{/logout}">Home</a>
+  <a href="registration" th:href="@{/registration}">Register</a>
+  <a href="login.html" th:href="@{/logout}">Login</a>
+  <a href="http://www.google.com" th:src="@{http://www.google.com}">Search</a>
+  <a sec:authorize="isAuthenticated()" th:href="@{/logout}">Logout</a>
+  ...
+</div>
+<!--        LOGO and heading-->
+<div class="vertical-menu container-fluid text-center">
+
+  <img src="/static/img/moneyLogo.jpg" th:href="@{/img/moneyLogo.jpg}" class="logo">
+
+  <div class="header-one">
+    <h1>Leeski banking</h1>
+  </div>
+  <div>
+    <h4>How much would you like to withdraw: </h4>
+    <span sec:authentication="principal.username"> User</span>
+  </div>
+
+  <!--            menu options-->
+  <div class="vertical-menu container-fluid text-center">
+    <h4>choose an option:</h4>
+    <!--        <a href="#" class="active">Home</a>-->
+    <a href="#">20</a>
+    <a href="#">50</a>
+    <a href="#">100</a>
+    <a href="#">250</a>
+    <a href="#">500</a>
+    <a href="#">Custom amount</a>
+  </div>
+</div>
+
+</body>
+</html>

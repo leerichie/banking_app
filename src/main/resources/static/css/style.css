@@ -16,13 +16,26 @@ a.navbar-brand {
     text-align: center;
 }
 
-/*.login-box {*/
-/*    position: center;*/
-/*    align-items: center;*/
-/*}*/
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
 
 .logo {
-    width: 400px;
+    width: 300px;
     height: auto;
     object-fit: contain;
 }
@@ -62,6 +75,7 @@ a.navbar-brand {
 }
 
 .vertical-menu a {
+    font-size: large;
     background-color: #eee; /* Grey background color */
     color: black; /* Black text color */
     display: block; /* Make the links appear below each other */
@@ -75,9 +89,11 @@ a.navbar-brand {
 .vertical-menu a:hover {
     background-color: lightseagreen; /* Dark grey background on mouse-over */
     color: white;
+    text-decoration: none;
 }
 
 .vertical-menu a.active {
     background-color: lightseagreen; /* Add a green color to the "active/current" link */
     color: white;
+    text-decoration: none;
 }
