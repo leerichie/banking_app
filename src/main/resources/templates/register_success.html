@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Congratulations!</title>
+
+  <link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}">
+
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+</head>
+<body>
+<!--	 create navi bar ( header) -->
+<div class="scrollmenu">
+  <a href="main_menu" th:href="@{/main_menu}">Home</a>
+  <a href="registration" th:href="@{/registration}">Register</a>
+  <a href="http://www.google.com" th:src="@{http://www.google.com}">Search</a>
+  ...
+</div>
+
+<!--        LOGO and heading-->
+<div class="vertical-menu container-fluid text-center">
+
+  <img src="/img/moneyLogo.jpg" th:href="@{/img/moneyLogo.jpg}" class="logo">
+
+  <div class="header-one">
+    <h2>Leeski banking</h2>
+  </div>
+</div>
+<div class="vertical-menu container-fluid text-center">
+  <div class="alert alert-info">You've successfully opened an account!
+  </div>
+  <h4>You can now login below:</h4>
+  <input type="button" class="btn btn-info" href="/login" th:href="@{/login}" value="Login">
+</div>
+
+</body>
+</html>

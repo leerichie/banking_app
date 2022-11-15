@@ -49,5 +49,9 @@ public class MainController {
         System.out.println(amountIn);
         return "redirect:/deposit";
     }
+//    @GetMapping("/register_success")
+//    public String registerSuccess (){
+//        return "register_success";
+//    }
 
 }
