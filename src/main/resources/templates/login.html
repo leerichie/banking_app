@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="ISO-8859-1">
@@ -17,18 +18,16 @@
 
 <!--	 create navi bar ( header) -->
 <div class="scrollmenu">
-    <a href="login.html" th:href="@{/logout}">Home</a>
+    <a href="main_menu" th:href="@{/main_menu}">Home</a>
     <a href="registration" th:href="@{/registration}">Register</a>
-    <a href="login.html" th:href="@{/logout}">Login</a>
     <a href="http://www.google.com" th:src="@{http://www.google.com}">Search</a>
-    <a sec:authorize="isAuthenticated()" th:href="@{/logout}">Logout</a>
     ...
 </div>
 
 <!--LOGO and HEADING">-->
 
 
-<div class="vertical-menu container-fluid text-center">
+<div class="vertical-menu container-fluid text-left">
 
     <!--				<-- Welcome  -->
     <img src="/img/moneyLogo.jpg" th:href="@{/img/moneyLogo.jpg}" class="logo">
@@ -64,18 +63,35 @@
         </div>
 
         <div class="form-outline mb-4">
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
+            <div class="row a">
+<!--                <div class="column-login">-->
+                <div class="col-sm-6">
                     <input type="submit" name="login-submit" id="login-submit"
                            class="form-control btn btn-primary" value="Log In"/>
                 </div>
+<!--                <div class="column-login">-->
+                <div class="col-sm-6">
+                    <input type="button" class="form-control btn btn-info"
+                           onclick="location.href='registration';"
+                           th:href="@{/registration}" value="Register"/>
+
+<!--                    <a href="registration" type="button"-->
+<!--                       class="form-control btn btn-primary" th:href="@{/registration}" >Register</a>-->
+                </div>
             </div>
         </div>
+<!--        <div class="form-outline mb-4">-->
+<!--            <div class="row">-->
+<!--                <div class="col-sm-6 col-sm-offset-1">-->
+<!--                    <a href="/" th:href="@{/registration}">Register here</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </form>
-    <div class="d-flex align-items-center justify-content-center pb-4">
-						<span>New user? <a href="/" th:href="@{/registration}">Register
-								here</a></span>
-    </div>
+<!--    <div class="d-flex align-items-center justify-content-center pb-4">-->
+<!--						<span>New user? <a href="/" th:href="@{/registration}">Register-->
+<!--								here</a></span>-->
+<!--    </div>-->
 </div>
 
 </body>

@@ -37,13 +37,15 @@ div.scrollmenu a:hover {
 .logo {
     width: 300px;
     height: auto;
-    object-fit: contain;
+    margin-left: 40px;
+
 }
 
 .header-one {
     font-family: Papyrus, serif;
     font-weight: bolder;
     color: chocolate;
+    margin-left: 15px;
 }
 
 .gradient-custom-2 {
@@ -98,19 +100,109 @@ div.scrollmenu a:hover {
     text-decoration: none;
 }
 
-/*body.error, html {*/
-/*    height: 100%;*/
-/*}*/
-
 .bg-error {
-    /*!* The image used *!*/
-    /*background-image: url("/static/img/404errorcat.png");*/
-
-    /* Full height */
     height: 100%;
-
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.form-submit-button {
+    color: black;
+    background-color: transparent;
+    border: none;
+    padding: 12px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    font-family: Papyrus, serif, bold;
+    text-shadow: none;
+    margin: -10px;
+}
+
+a.active .form-submit-button {
+    background-color: lightseagreen; /* Add color to "active/current" link */
+    color: white;
+    text-decoration: none;
+}
+
+a:hover .form-submit-button {
+    background-color: lightseagreen; /* mouse-over */
+    color: white;
+    text-decoration: none ;
+}
+.row a{
+    display: flex;
+}
+
+.col-sm-6 {
+    flex: 50%;
+    margin-top: 20px;
+}
+
+.container-fluid{
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.control-label {
+    text-align-all: left;
+}
+label {
+    margin-top: 15px;
+}
+h2 {
+    text-align: center;
+    margin-top: 5px;
+}
+h1, h3, h4, h5 {
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+.alert-info {
+    text-align: center;
+}
+.btn-success {
+    margin-left: 160px;
+}
+/*.column-login {*/
+/*    margin-top: 10px;*/
+/*}*/
+/*.column-login a {*/
+
+/*}*/
+
+/*.row a{*/
+/*    position: relative;*/
+/*}*/
+
+/*@keyframes example {*/
+/*    from {background-color: red;}*/
+/*    to {background-color: yellow;}*/
+/*    from {background-color: blueviolet;}*/
+/*    to {background-color: gold;}*/
+/*    from {background-color: blue;}*/
+/*    to {background-color: seagreen;}*/
+/*}*/
+
+/*!* The element to apply the animation to *!*/
+/*.form-submit-button {*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: transparent;*/
+/*    animation-name: example;*/
+/*    animation-duration: 4s;*/
+/*    animation-iteration-count: 10;*/
+/*}*/
+
+/*.column-login {*/
+/*    float: left;*/
+/*    width: 40%;*/
+/*}*/
+
+/*!* Clear floats after the columns *!*/
+/*.row:after {*/
+/*    content: "";*/
+/*    display: table;*/
+/*    clear: both;*/
+/*}*/

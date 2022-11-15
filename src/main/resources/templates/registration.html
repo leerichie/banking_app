@@ -17,8 +17,7 @@
 
 <!--	 create navigation bar ( header) -->
 <div class="scrollmenu">
-    <a href="login.html" th:href="@{/logout}">Home</a>
-    <a href="registration" th:href="@{/registration}">Register</a>
+    <a href="main_menu" th:href="@{/main_menu}">Home</a>
     <a href="login.html" th:href="@{/logout}">Login</a>
     <a href="http://www.google.com" th:src="@{http://www.google.com}">Search</a>
     ...
@@ -30,9 +29,9 @@
     <img src="/img/moneyLogo.jpg" th:href="@{/img/moneyLogo.jpg}" class="logo">
 
     <div class="header-one">
-        <h1>Leeski banking</h1>
+        <h2>Leeski banking</h2>
     </div>
-    <div class="vertical-menu container-fluid text-center">
+    <div class="vertical-menu container-fluid text-left">
         <div class="row">
 
             <!-- success message -->
@@ -41,7 +40,7 @@
                 </div>
             </div>
 
-            <h1>Open an account</h1>
+            <h3>Open an account</h3>
 
             <form th:action="@{/registration}" method="post" th:object="${user}">
                 <div class="form-group">
@@ -70,8 +69,11 @@
 
                 <div class="form-group">
                     <button type="submit" class="btn btn-success">Register</button>
-                    <span>Already have an account? <a href="/" th:href="@{/login}">Login
-								here</a></span>
+<!--                    <input type="button" class="btn btn-info"-->
+<!--                            onclick="location.href='login';"-->
+<!--                            th:href="@{/login}" value="Login"/>-->
+<!--                    <span>Already have an account? <a href="/" th:href="@{/login}">Login-->
+<!--								here</a></span>-->
                 </div>
             </form>
         </div>

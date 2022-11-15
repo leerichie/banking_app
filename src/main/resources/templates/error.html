@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Oops :)</title>
-    <link rel="stylesheet" href="/static/css/style.css" th:href="@{/static/css/style.css}">
+    <link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}">
 </head>
 <body>
 
 <!-- header-->
 <div class="scrollmenu">
-    <a href="login.html" th:href="@{/logout}">Home</a>
+    <a href="main_menu" th:href="@{/main_menu}">Home</a>
     <a href="registration.html" th:href="@{/registration}">Register</a>
     <a href="login.html" th:href="@{/logout}">Login</a>
     <a href="http://www.google.com" th:src="@{http://www.google.com}">Search</a>
@@ -18,7 +18,7 @@
 </div>
 <!-- error notice-->
 <div class="bg-error">
-    <img src="/static/img/404errorcat.png" th:href="@{/static/img/404errorcat.png}">
+    <img src="/img/404errorcat.png" th:href="@{/img/404errorcat.png}">
     <!--    <h1>404</h1>-->
     <!--    <h2>PAGE NOT FOUND</h2>-->
 <!--    <div class="vertical-menu container-fluid text-center">-->
